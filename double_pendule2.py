@@ -7,6 +7,8 @@ from matplotlib.patches import Circle
 
 # https://scipython.com/blog/the-double-pendulum/
 
+# Vers les n pendules: https://jakevdp.github.io/blog/2017/03/08/triple-pendulum-chaos/
+
 # Pendulum rod lengths (m), bob masses (kg).
 L1, L2 = 1, 1
 m1, m2 = 1, 1
