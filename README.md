@@ -7,7 +7,11 @@ Ces projets sont souvent repris d'autres sources que je précise normalement au 
 
 ## L'attracteur de Lorenz
 
-![Alt text](results/attracteur_lorenz.png "L'attracteur de Lorenz")
+<img src="results/attracteur_lorenz.png" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
 
 $$\left\{\displaystyle{
     \begin{aligned}
@@ -23,9 +27,18 @@ $$
 
 $$\ddot{\theta} + \frac{\alpha}{ml}\dot{\theta}+\frac{g}{l}\sin(\theta)=0$$
 
-![Alt text](results/pendule_sans_frottements.png "Pendule-Mouvement conservatif")
 
-![Alt text](results/pendule_avec_frottements.png "Avec frottements")
+<img src="results/pendule_sans_frottements.png" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
+
+<img src="results/pendule_avec_frottements.png" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
 
 
 
@@ -40,12 +53,28 @@ $$\displaystyle{
     \end{cases}}
 $$
 
-![Alt text](results/double_pendulum_delay_10.gif "Animation double pendule")
-![Alt text](results/double_pendule.png "Pendule double")
+
+<img src="results/double_pendulum_delay_10.gif" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
+
+<img src="results/double_pendule.png" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
 
 
-Pour aller plus loin sur les pendules:
+
+-----------
+
+
+=> Pour aller plus loin sur les pendules:
 https://jakevdp.github.io/blog/2017/03/08/triple-pendulum-chaos/
+
+----
 
 
 # La suite logistique
@@ -59,14 +88,26 @@ $$
 \end{cases}
 $$
 
-![Alt text](results/chaos_4096_2048.png "Diagramme de bifurcation")
+
+
+<img src="results/chaos_4096_2048.png" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
 
 
 # Henon's map
 
 https://en.wikipedia.org/wiki/H%C3%A9non_map
 
-![Alt text](results/henon_x.png "Diagramme de bifurcation x henon")
+
+
+<img src="results/henon_x.png" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
 
 $$
 \begin{cases} 
@@ -86,41 +127,85 @@ $$\begin{cases}
 {\dot {x}} (t) &=-y(t)-z(t) \\
 {\dot {y}}(t) &=x(t)+ay(t) \\
 {\dot {z}}(t) &=b+z(t)(x(t)-c)
-\end{cases}
+-\end{cases}
 $$
 
 
-![Alt text](results/attracteur_rossler_epure_03.png "Attracteur de Rössler")
+<img src="results/attracteur_rossler_epure_03.png 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
 
 ## Ueda 
 
+## Clifford
 
 
+<img src="results/clifford_04.png" 
+        alt="Picture" 
+        width="800" 
+        height="800" 
+        style="display: block; margin: 0 auto" />
+
+## Hopalong
+
+
+<img src="results/hopalong1_01.png" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
+
+<img src="results/hopalong2_01.png" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
+
+## Simples chaotic flow
+
+
+<img src="results/simplest_chaotic_flow_01.png" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
 
 # Chirikov Standard map
 
-http://www.scholarpedia.org/article/Chirikov_standard_map
-https://en.wikipedia.org/wiki/Standard_map
+- http://www.scholarpedia.org/article/Chirikov_standard_map
+- https://en.wikipedia.org/wiki/Standard_map
 
-![Alt text](results/standard_map.gif "Standard Map")
+<img src="results/standard_map.gif" 
+        alt="Picture" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
 
 
 # Bouncing balls
 https://www.youtube.com/watch?v=6z4qRhpBIyA
 
-## Autres projets 
-https://sprott.physics.wisc.edu/chaos/comchaos.htm
-https://rreusser.github.io/sketches/
-https://sprott.physics.wisc.edu/
-https://examples.pyviz.org/attractors/attractors.html
-https://vedransekara.github.io/2016/11/14/strange_attractors.html
-https://examples.pyviz.org/attractors/attractors.html
-https://www.maplesoft.com/support/help/maple/view.aspx?path=MathApps%2fGuide#Real%20Numbers
-https://www.youtube.com/watch?v=6z4qRhpBIyA
-https://www.youtube.com/watch?v=kbKtFN71Lfs
+# Simulation système planétaire
+
+<img src="results/simulation_systeme_terre_lunes.png" 
+        alt="Picture" 
+        style="display: block; margin: 0 auto" />
+
+# Autres projets 
+- https://sprott.physics.wisc.edu/chaos/comchaos.htm
+- https://rreusser.github.io/sketches/
+- https://sprott.physics.wisc.edu/
+- https://examples.pyviz.org/attractors/attractors.html
+- https://vedransekara.github.io/2016/11/14/strange_attractors.html
+- https://examples.pyviz.org/attractors/attractors.html
+- https://www.maplesoft.com/support/help/maple/view.aspx?path=MathApps%2fGuide#Real%20Numbers
+- https://www.youtube.com/watch?v=6z4qRhpBIyA
+- https://www.youtube.com/watch?v=kbKtFN71Lfs
 
 # Theory
 
-https://sprott.physics.wisc.edu/pubs/paper249/PAPER249.HTM
-https://en.wikipedia.org/wiki/Kaplan%E2%80%93Yorke_conjecture
-https://fr.wikipedia.org/wiki/Exposant_de_Liapounov
+- https://sprott.physics.wisc.edu/pubs/paper249/PAPER249.HTM
+- https://en.wikipedia.org/wiki/Kaplan%E2%80%93Yorke_conjecture
+- https://fr.wikipedia.org/wiki/Exposant_de_Liapounov
