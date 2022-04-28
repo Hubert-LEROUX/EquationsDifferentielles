@@ -105,11 +105,19 @@ https://en.wikipedia.org/wiki/Standard_map
 ![Alt text](results/standard_map.gif "Standard Map")
 
 
+# Bouncing balls
+https://www.youtube.com/watch?v=6z4qRhpBIyA
+
 ## Autres projets 
 https://sprott.physics.wisc.edu/chaos/comchaos.htm
 https://rreusser.github.io/sketches/
 https://sprott.physics.wisc.edu/
 https://examples.pyviz.org/attractors/attractors.html
+https://vedransekara.github.io/2016/11/14/strange_attractors.html
+https://examples.pyviz.org/attractors/attractors.html
+https://www.maplesoft.com/support/help/maple/view.aspx?path=MathApps%2fGuide#Real%20Numbers
+https://www.youtube.com/watch?v=6z4qRhpBIyA
+https://www.youtube.com/watch?v=kbKtFN71Lfs
 
 # Theory
 
