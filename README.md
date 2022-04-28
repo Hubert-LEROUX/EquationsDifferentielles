@@ -3,10 +3,11 @@
 
 Ce projet contient quelques fameux problèmes de physiques ne pouvant se résoudre à la main comme le pendule simple. 
 Il explore également les systèmes chaotiques comme le double pendule ou l'attracteur de Lorenz en passant par la suite logistique.
+Ces projets sont souvent repris d'autres sources que je précise normalement au début des programmes.
 
 ## L'attracteur de Lorenz
 
-![Alt text](attracteur_lorenz.png "L'attracteur de Lorenz")
+![Alt text](results/attracteur_lorenz.png "L'attracteur de Lorenz")
 
 $$\left\{\displaystyle{
     \begin{aligned}
@@ -22,9 +23,9 @@ $$
 
 $$\ddot{\theta} + \frac{\alpha}{ml}\dot{\theta}+\frac{g}{l}\sin(\theta)=0$$
 
-![Alt text](pendule_sans_frottements.png "Pendule-Mouvement conservatif")
+![Alt text](results/pendule_sans_frottements.png "Pendule-Mouvement conservatif")
 
-![Alt text](pendule_avec_frottements.png "Avec frottements")
+![Alt text](results/pendule_avec_frottements.png "Avec frottements")
 
 
 
@@ -39,8 +40,8 @@ $$\displaystyle{
     \end{cases}}
 $$
 
-![Alt text](frames/double_pendulum_delay_10.gif "Animation double pendule")
-![Alt text](double_pendule.png "Pendule double")
+![Alt text](results/double_pendulum_delay_10.gif "Animation double pendule")
+![Alt text](results/double_pendule.png "Pendule double")
 
 
 Pour aller plus loin sur les pendules:
@@ -58,14 +59,14 @@ $$
 \end{cases}
 $$
 
-![Alt text](chaos_4096_2048.png "Diagramme de bifurcation")
+![Alt text](results/chaos_4096_2048.png "Diagramme de bifurcation")
 
 
 # Henon's map
 
 https://en.wikipedia.org/wiki/H%C3%A9non_map
 
-![Alt text](henon_x.png "Diagramme de bifurcation x henon")
+![Alt text](results/henon_x.png "Diagramme de bifurcation x henon")
 
 $$
 \begin{cases} 
@@ -77,15 +78,41 @@ $$
 Ce qui revien pour x à
 $$x_{n+2}=1+bx_n-ax_{n+1}^2$$
 
+# Attractors
+
+## Rössler
+
+$$\begin{cases} 
+{\dot {x}} (t) &=-y(t)-z(t) \\
+{\dot {y}}(t) &=x(t)+ay(t) \\
+{\dot {z}}(t) &=b+z(t)(x(t)-c)
+\end{cases}
+$$
+
+
+![Alt text](results/attracteur_rossler_epure_03.png "Attracteur de Rössler")
+
+## Ueda 
+
+
+
+
 # Chirikov Standard map
 
 http://www.scholarpedia.org/article/Chirikov_standard_map
 https://en.wikipedia.org/wiki/Standard_map
 
+![Alt text](results/standard_map.gif "Standard Map")
+
+
 ## Autres projets 
 https://sprott.physics.wisc.edu/chaos/comchaos.htm
+https://rreusser.github.io/sketches/
+https://sprott.physics.wisc.edu/
+https://examples.pyviz.org/attractors/attractors.html
 
 # Theory
 
+https://sprott.physics.wisc.edu/pubs/paper249/PAPER249.HTM
 https://en.wikipedia.org/wiki/Kaplan%E2%80%93Yorke_conjecture
 https://fr.wikipedia.org/wiki/Exposant_de_Liapounov

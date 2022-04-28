@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw
 import numpy as np 
 from matplotlib import pyplot as plt 
 
-def henon(ci, a=1.4, b=0.3, N=1_000):
+def henon(ci, a=1.4, b=0.3, N=100_000):
 
     def fHenon(x,y):
         return (1+y-a*x*x, b*x)
@@ -17,9 +17,11 @@ def henon(ci, a=1.4, b=0.3, N=1_000):
         suite = suite_henon(x0, y0, N)
         xs = [t[0] for t in suite]
         ys = [t[1] for t in suite]
-        plt.plot(xs,ys,"o-",label=str((x0,y0)), lw=0.1, markersize=0.2)
+        # plt.plot(xs,ys,"o-",label=str((x0,y0)), lw=0.1, markersize=0.2)
+        plt.scatter(xs,ys,label=str((x0,y0)), s=0.2)
 
     plt.grid(True)
+    plt.title(r"$x_{n+1} = 1+y_n-ax_n^2$ and $y_{n+1} =  bx_n$")
     plt.plot()
     plt.show()
 
@@ -58,4 +60,5 @@ def draw_x(name_output="chaos.png", longueur=4096, hauteur=4096, nb_points=500):
 
 if __name__ == "__main__":
     # henon([(1,1), (0.5,0.5)])
-    draw_x("henon_x.png", 4*4096,4*4096)
+    henon([(1,1)])
+    # draw_x("henon_x.png", 4*4096,4*4096)
