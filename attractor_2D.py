@@ -100,14 +100,14 @@ def attracteur(cis, f, args=(), name_output="Clifford", nb_iterations=1_000_000,
 
 
 def random_attractors(f=fCliffordAttractor, name="Attractor", generator_args=lambda : tuple(np.round(np.random.rand(4)*4-2,3)), serie=1):
-    s=0.001
-    nb_iterations = 20_000
-    dpi = 200
+    s=0.0005
+    nb_iterations = 10_000
+    dpi = 80
     facecolor = "white"
     # precision = 3
 
-    fig, ax = plt.subplots(5,5, figsize=(12,12))
-    # fig, ax = plt.subplots(5,5,dpi=dpi figsize=(12,12))
+    # fig, ax = plt.subplots(5,5, figsize=(12,12))
+    fig, ax = plt.subplots(5,5,dpi=dpi, figsize=(12,12))
     
     for i in range(5):
         for j in range(5):
@@ -115,8 +115,8 @@ def random_attractors(f=fCliffordAttractor, name="Attractor", generator_args=lam
             args = generator_args()
             r,g,b = (np.random.random() for _ in range(3))
 
-            if i==j==0:
-                args = (1.8, 0.0, 1.0, 0.1, -1.93, 5)
+            # if i==j==0:
+            #     args = (1.8, 0.0, 1.0, 0.1, -1.93, 5)
 
             print(*args)
 
@@ -130,22 +130,36 @@ def random_attractors(f=fCliffordAttractor, name="Attractor", generator_args=lam
                 xx[k] = x
                 yy[k] = y
 
-            ax[i,j].scatter(xx, yy, s=s, color=(r,g,b))
+            ax[i,j].scatter(xx, yy, s=s, color=(r,g,b), marker=".")
+            # ax[i,j].plot(xx, yy, ".",  markersize=s, color=(r,g,b))
+
             ax[i,j].set_title(f"{args}", size=6)
             ax[i,j].axis("off")
             ax[i,j].axis("equal")
         
     # fig.tight_layout()
     fig.suptitle(name, fontsize=15)
-    # plt.savefig(f"results/{name}_{serie:2d}")
-    # plt.savefig(f"results/{name}_{serie:2d}", dpi=dpi)
-    plt.show()
+    # plt.savefig(f"planches/{name}/{name}_{serie:03}")
+    plt.savefig(f"planches/{name}/{name}_{serie:03}", dpi=dpi)
+    # plt.show()
+    plt.clf()
 
 if __name__ == "__main__":
+
+    # print(f"{2:03}")
+    for k in range(0,100):
+        print()
+        print(k)
+        print()
+        # random_attractors(fHopalong2, name="hopalong2",serie=k)
+        random_attractors(fGumowski_Mira, generator_args=lambda : tuple(np.round(np.random.rand(3)*4-2,3)),name="gumowski_mira",serie=k)
+
+
+
+
     # attracteur([(0.1,0.1)], fSymmetricIcon, args=(1.8, -1.2, 1.0, 0.1, -1.93, 5), nb_iterations=100_000,
     #             name_output=f"clifford_07", c="red", facecolor="white", s=0.01, dpi=80)
-    for k in range(1,10):
-        random_attractors(fSymmetricIcon, generator_args=lambda : tuple(np.round(np.random.rand(4)*6-3,2))+(round(np.random.random()+1.5,2), np.random.randint(3,10)), name="SymmetricIcon",serie=k)
+
     # random_attractors(fSymmetricIcon, generator_args=lambda : tuple(np.round(np.random.rand(4)*4-2,2))+(np.random.random()+1.5, np.random.randint(1,5)), name="SymmetricIcon")
     
     
